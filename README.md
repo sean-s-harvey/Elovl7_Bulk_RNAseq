@@ -11,11 +11,12 @@ Count matrix and metadata were loaded into R (v4.3.2). Differential expression (
 
 For clustering and principal component analysis (PCA), variance across the range of expression values was stabilized using the variance stabilizing transformation function (vst), and stabilized data were then projected into principal component (PC) space using the plotPCA function. 
 
-![PCA.pdf](https://github.com/user-attachments/files/21025935/PCA.pdf)
+[PCA.pdf](https://github.com/user-attachments/files/21026050/PCA.pdf)
+[Dendrogram_Heatmap.pdf](https://github.com/user-attachments/files/21026054/Dendrogram_Heatmap.pdf)
 
 Volcano plots and MA plots were generated with gpplot2 (v3.5.1) utilizing the results output from DESeq2.
-![Volcano_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025940/Volcano_Ctrl_AgedvsYoung.pdf)
 
-![MA_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025943/MA_Ctrl_AgedvsYoung.pdf)
+[Volcano_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21026055/Volcano_Ctrl_AgedvsYoung.pdf)
+[MA_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21026057/MA_Ctrl_AgedvsYoung.pdf)
 
 Additonally, the DESeq2 notebook contains custom code to convert count matrix data into transcripts-per-million (TPM) values, and export these results along with the output from all DESeq2 experiments. This provides a clean and tidy dataset to look through, with all TPM values for all samples alongside the output from all statistical comparisons. 
