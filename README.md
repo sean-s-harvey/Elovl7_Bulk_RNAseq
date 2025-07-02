@@ -10,8 +10,8 @@ Sequencing reads were aligned to the mm10 genome (refdata-gex-mm10-2020-A) using
 Count matrix and metadata were loaded into R (v4.3.2). Differential expression (DE) analysis was performed using DESeq2 (v1.40.2), with Wald's test and Benjamini-Hochberg multiple testing procedure. In a preliminary test, DE analysis between cKO and control was performed across the entire dataset (aged and young together), with an Age:Genotype interaction term included; however, this approach resulted in the model fitting more to noise (low-abundance hypervariable features), and missed the real changes. DE analysis was ultimately performed pair-wise between Elovl7 cKO and litter-mate control samples across ages with sex of the mice considered as a covariate in all comparisons. In this approach, each age group (4 months and 20 months), were essentially treated as entirely distinct datasets. Additionally, DE analysis was used to compare Aged controls to Young controls, and Aged cKO to Young cKO. Differentially expressed genes (DEGs) were determined as those with BH-adjusted p-values < 0.05.    
 
 For clustering and principal component analysis (PCA), variance across the range of expression values was stabilized using the variance stabilizing transformation function (vst), and stabilized data were then projected into principal component (PC) space using the plotPCA function. 
-[PCA.pdf](https://github.com/user-attachments/files/21025935/PCA.pdf)
+![PCA.pdf](https://github.com/user-attachments/files/21025935/PCA.pdf)
 
 Volcano plots and MA plots were generated with gpplot2 (v3.5.1) utilizing the results output from DESeq2.
-[Volcano_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025940/Volcano_Ctrl_AgedvsYoung.pdf)
-[MA_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025943/MA_Ctrl_AgedvsYoung.pdf)
+![Volcano_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025940/Volcano_Ctrl_AgedvsYoung.pdf)
+![MA_Ctrl_AgedvsYoung.pdf](https://github.com/user-attachments/files/21025943/MA_Ctrl_AgedvsYoung.pdf)
